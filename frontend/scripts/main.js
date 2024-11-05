@@ -36,7 +36,7 @@ document.getElementById('generar-recomendacion').addEventListener('click', () =>
         })
         .then(data => {
             let res = "";            
-            res += `Recomendacion:\n ${data.recomendacion}\n`;
+            res += `Recomendacion:\n ${data.response}\n`;
 
             const cadenaConSaltos = res.replace(/\n/g, '<br>');
             document.getElementById('result3').innerHTML = cadenaConSaltos;
