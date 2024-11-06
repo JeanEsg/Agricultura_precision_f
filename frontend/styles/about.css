@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ffffff6c;
+    background-color: #748C6C;
     color: #333;
 }
 .container {
@@ -16,14 +16,8 @@ body {
 }
 .section h2 {
     font-size: 2em;
-    color: #2f3b56;
+    color: #2A3F1D;
     text-align: center;
-}
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
 }
 .content {
     display: flex;
@@ -39,6 +33,7 @@ body {
 .content p {
     font-size: 1.1em;
     color: #555;
+    text-align: justify;
 }
 .content .image {
     flex: 1;

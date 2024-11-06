@@ -10,7 +10,7 @@ body, html {
 }
 
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1519958135932-dca9c8841a1c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://img.freepik.com/foto-gratis/refresco-arriba-medida-que-rociadores-arrojan-agua-sobre-vegetacion-geometrica-campos_91128-4673.jpg?t=st=1730850266~exp=1730853866~hmac=6d876b2e4881f831d48b658a32a9254367ee34a194337737cca0ec92060a420c&w=1380');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -19,6 +19,7 @@ body, html {
     align-items: center;
     color: white;
     position: relative;
+    
 }
 
 .hero h1 {
@@ -29,7 +30,7 @@ body, html {
 }
 
 .content {
-    padding: 40px;
+    padding: 0;
     color: rgb(7, 7, 7);
 }
 
@@ -37,6 +38,11 @@ body, html {
     font-size: 36px;
     margin-bottom: 20px;
     text-align: center;
+    background-color: #2A3F1D;
+    color: white; /* Asegura que el texto sea visible */
+    padding: 20px 0; /* Añade algo de espacio interior */
+    margin: 0 0 30px 0; /* Elimina cualquier margen adicional */
+    width: 100%; /* Asegura que el elemento ocupe todo el ancho */
 }
 
 .content p {
@@ -78,15 +84,15 @@ button {
     display: block;
     width: 30%;
     padding: 20px;
-    background-color: #6c3b2a;
+    background-color: #2A3F1D;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 20px auto;
 }
 button:hover {
-    background-color: #04AA6D;
+    background-color: #849454;
 }
 .res {
     background-color: #fff;
@@ -97,7 +103,7 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
-    margin: 30px auto 50px;
+    margin: 30px auto 30px;
 }
 .active {
     background-color: #04AA6D;

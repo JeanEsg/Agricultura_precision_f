@@ -4,6 +4,7 @@ document.getElementById('sensor-data').addEventListener('click', () => {
         .then(data => {
             const resultElement = document.getElementById('result');
             resultElement.innerHTML = `
+            
             <p>Temperatura: ${data.temperatura}°C</p>
             <p>Humedad: ${data.humedad}%</p>
             <p>Humedad Relativa: ${data.humedadR}%</p>
