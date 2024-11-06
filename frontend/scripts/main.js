@@ -6,12 +6,27 @@ document.getElementById('sensor-data').addEventListener('click', () => {
             resultElement.innerHTML = `
             
             <p>Temperatura: ${data.temperatura}°C</p>
-            <p>Humedad: ${data.humedad}%</p>
-            <p>Humedad Relativa: ${data.humedadR}%</p>
+            <p>Humedad: ${data.humeda_aire}%</p>
+            <p>Humedad Relativa: ${data.humedad_suelo}%</p>
         `;
+        }) 
+        .catch(error => console.error('Error:', error));
+});
+
+document.getElementById('save').addEventListener('click', () => {
+    fetch('http://127.0.0.1:8002/save') // Cambiar el puerto a conveniencia
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Error: ${response.statusText}`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            alert(data) // Mostrar la cadena directamente
         })
         .catch(error => console.error('Error:', error));
 });
+
 
 document.getElementById('cantidad-agua-litros').addEventListener('click', () => {
     fetch('http://127.0.0.1:8002/cantidad') // Cambiar el puerto a conveniencia

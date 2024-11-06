@@ -30,7 +30,10 @@ body, html {
 }
 
 .content {
-    padding: 0;
+    display: flex;               /* Flexbox para alinear en fila */
+    flex-direction: column;
+    gap: 20px;                   /* Espacio entre los elementos */
+    padding: 0px;
     color: rgb(7, 7, 7);
 }
 
@@ -80,30 +83,33 @@ ul li a:hover {
     background-color: #ec0808;
 }
 
+.btn1 {
+    flex : 0.5;
+}
+
 button {
-    display: block;
-    width: 30%;
     padding: 20px;
     background-color: #2A3F1D;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin: 0 auto 20px auto;
+    width: 20%;              
+    text-align: center;
+    margin: 10px; 
 }
 button:hover {
     background-color: #849454;
 }
+
 .res {
     background-color: #fff;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.189);
+    max-width: 900px;
     width: 100%;
-    margin: 30px auto 30px;
+    margin: 0 50px;
 }
 .active {
     background-color: #04AA6D;
@@ -111,3 +117,29 @@ button:hover {
 .salir {
     float: right;
 }
+
+.button-result {
+    display: flex;               
+    justify-content: flex-start; 
+    gap: 10px;                   
+    align-items: center;         
+}
+
+.btn2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px; 
+}
+
+.btn2 {
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+}
+
+

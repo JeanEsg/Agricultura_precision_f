@@ -111,6 +111,7 @@ p {
     animation: slideUp 0.8s ease forwards 0.8s;
 }
 
+
 @keyframes slideUp {
     0% {
         transform: translateY(300px);
