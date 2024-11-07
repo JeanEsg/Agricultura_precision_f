@@ -19,6 +19,8 @@ body, html {
     align-items: center;
     color: white;
     position: relative;
+    animation: expand .8s ease forwards;
+    transition: all .8s ease;
     
 }
 
@@ -27,6 +29,7 @@ body, html {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
+    animation: slideUp .8s ease-in-out forwards .8s;
 }
 
 .content {
@@ -96,7 +99,10 @@ button {
     cursor: pointer;
     width: 20%;              
     text-align: center;
-    margin: 10px; 
+    margin: 10px;
+    overflow: hidden;
+    transform: translateY(50px);
+    animation: slideUp .8s ease-in-out  forwards 1s;
 }
 button:hover {
     background-color: #849454;
@@ -122,7 +128,8 @@ button:hover {
     display: flex;               
     justify-content: flex-start; 
     gap: 10px;                   
-    align-items: center;         
+    align-items: center;
+    animation: slideIn 1.5s ease-in-out forwards;        
 }
 
 .btn2-container {
@@ -142,4 +149,42 @@ button:hover {
     text-align: center;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -10;
+    background-color: #849454;
+  }
+
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
 
