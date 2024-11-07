@@ -57,7 +57,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #2A3F1D;
     position: fixed;
     top: 0;
     width: 100%; 
@@ -76,7 +76,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #04AA6D;
+    background-color: #849454;
 }
 
 .salir a:hover {
@@ -112,7 +112,7 @@ button:hover {
     margin: 0 50px;
 }
 .active {
-    background-color: #04AA6D;
+    background-color: #849454;
 }
 .salir {
     float: right;

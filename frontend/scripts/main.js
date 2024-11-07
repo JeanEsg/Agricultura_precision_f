@@ -9,7 +9,6 @@ document.getElementById('sensor-data').addEventListener('click', () => {
                 humedad_aire: data.humedad_aire,
                 humedad_suelo: data.humedad_suelo
             };
-
             const resultElement = document.getElementById('result');
             resultElement.innerHTML = `
             <p>Temperatura: ${data.temperatura}°C</p>
@@ -68,7 +67,7 @@ document.getElementById('cantidad-agua-litros').addEventListener('click', () => 
                 return response.text();
             })
             .then(data => {
-                document.getElementById('result2').textContent = data; // Mostrar la cadena directamente
+                document.getElementById('result2').value = data; // Mostrar la cadena directamente
             })
             .catch(error => console.error('Error:', error));
     } else {
@@ -98,7 +97,7 @@ document.getElementById('generar-recomendacion').addEventListener('click', () =>
         let res = "";            
         res += `Recomendacion:\n ${data.response}\n`;
         const cadenaConSaltos = res.replace(/\n/g, '<br>');
-        document.getElementById('result3').innerHTML = cadenaConSaltos;
+        document.getElementById('result3').value = cadenaConSaltos;
     })
     .catch(error => console.error('Error:', error));
 });
