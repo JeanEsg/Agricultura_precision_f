@@ -103,6 +103,7 @@ button {
     overflow: hidden;
     transform: translateY(50px);
     animation: slideUp .8s ease-in-out  forwards 1s;
+    min-width: 20%;
 }
 button:hover {
     background-color: #849454;
