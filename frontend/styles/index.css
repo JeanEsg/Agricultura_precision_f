@@ -16,7 +16,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #2A3F1D;
     position: fixed;
     top: 0;
     width: 100%; 
@@ -33,7 +33,7 @@ ul li a {
     text-align: center;
 }
 ul li a:hover {
-    background-color: #04AA6D;
+    background-color: #849454;
 }
 
 .container {
@@ -59,7 +59,7 @@ ul li a:hover {
 
 h2 {
     font-size: 28px;
-    color: #333;
+    color: #2A3F1D;
     margin-bottom: 10px;
 }
 

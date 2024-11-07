@@ -10,7 +10,7 @@ body, html {
 }
 
 .hero {
-    background-image: url('https://img.freepik.com/foto-gratis/refresco-arriba-medida-que-rociadores-arrojan-agua-sobre-vegetacion-geometrica-campos_91128-4673.jpg?t=st=1730850266~exp=1730853866~hmac=6d876b2e4881f831d48b658a32a9254367ee34a194337737cca0ec92060a420c&w=1380');
+    background-image: url('../images/1.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -33,9 +33,9 @@ body, html {
 }
 
 .content {
-    display: flex;               /* Flexbox para alinear en fila */
+    display: flex;               
     flex-direction: column;
-    gap: 20px;                   /* Espacio entre los elementos */
+    gap: 20px;                   
     padding: 0px;
     color: rgb(7, 7, 7);
 }
@@ -45,10 +45,10 @@ body, html {
     margin-bottom: 20px;
     text-align: center;
     background-color: #2A3F1D;
-    color: white; /* Asegura que el texto sea visible */
-    padding: 20px 0; /* Añade algo de espacio interior */
-    margin: 0 0 30px 0; /* Elimina cualquier margen adicional */
-    width: 100%; /* Asegura que el elemento ocupe todo el ancho */
+    color: white; 
+    padding: 20px 0; 
+    margin: 0 0 30px 0; 
+    width: 100%; 
 }
 
 .content p {
@@ -116,6 +116,8 @@ button:hover {
     max-width: 900px;
     width: 100%;
     margin: 0 50px;
+    transform: translateY(50px);
+    animation: slideUp .8s ease-in-out  forwards 1s;
 }
 .active {
     background-color: #849454;

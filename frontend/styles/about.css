@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #748C6C;
-    color: #333;
+    color: #2A3F1D;
 }
 .container {
     width: 80%;
@@ -54,7 +54,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #2A3F1D;
     position: fixed;
     top: 0;
     justify-content: center;
@@ -72,10 +72,10 @@ ul li a {
     text-align: center;
 }
 ul li a:hover {
-    background-color: #04AA6D;
+    background-color: #849454;
 }
 .active {
-    background-color: #04AA6D;
+    background-color: #849454;
 }
 
 .section {
@@ -101,7 +101,7 @@ ul li a:hover {
 
 h2 {
     font-size: 28px;
-    color: #333;
+    color: #2A3F1D;
     margin-bottom: 10px;
 }
 
