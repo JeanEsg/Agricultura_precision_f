@@ -134,6 +134,15 @@ button:hover {
     animation: slideIn 1.5s ease-in-out forwards;        
 }
 
+.button-result2 {
+    display: flex;               
+    justify-content: flex-start; 
+    gap: 10px;                   
+    align-items: center;
+    animation: slideIn 1.5s ease-in-out forwards;
+    margin-bottom: 100px;       
+}
+
 .btn2-container {
     display: flex;
     justify-content: center;
