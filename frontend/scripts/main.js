@@ -96,7 +96,8 @@ document.getElementById('generar-recomendacion').addEventListener('click', () =>
     .then(data => {
         let res = "";            
         res += `Recomendacion:\n${data.response}\n`;
-        document.getElementById('result3').value = res;
+        const formattedText = res.replace(/\*\s*/g, '');
+        document.getElementById('result3').value = formattedText;
     })
     .catch(error => console.error('Error:', error));
 });
